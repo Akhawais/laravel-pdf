@@ -30,6 +30,8 @@ class Pdf {
 			'margin_footer'        =>   $this->getConfig('margin_footer'),     // margin footer
 			'tempDir'              =>   $this->getConfig('tempDir')            // margin footer
 		];
+		
+		$mpdf_config['useActiveForms'] = $this->getConfig('useActiveForms');
 
 		// Handle custom fonts
 		$mpdf_config = $this->addCustomFontsConfig($mpdf_config);
